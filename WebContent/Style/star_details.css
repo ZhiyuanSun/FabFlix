@@ -1,0 +1,25 @@
+h4, h3 {
+	font-family: raleway;
+}
+
+p {
+	font-family: arial;
+	
+}
+
+
+
+div#main_content {
+	position: relative;
+	top: 200px;
+	left: 200px;
+}
+
+table {
+	border: 0px;
+	
+}
+
+table tr > td {
+	border: 0px;
+}

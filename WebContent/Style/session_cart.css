@@ -1,0 +1,36 @@
+body {
+	font-family: Raleway;
+}
+
+div#main_content{
+	position: relative;
+	top: 150px;
+	left: 150px;
+	
+}
+
+.button_submit{
+	color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(223, 117, 20);
+    border: 0px;
+    width: 75px;
+}
+
+.button_table{
+	color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(66, 184, 221);
+    border: 0px;
+    width: 120px;
+}
+
+table {
+	width: 900px;
+}
+
+table tr > td {
+	padding-bottom: 20px;
+}

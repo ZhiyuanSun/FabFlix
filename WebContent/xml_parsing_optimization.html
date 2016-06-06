@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>xml parsing optimization</title>
+</head>
+<body>
+To boost up our parsing speed, we use two optimization techniques to reduce the running time of our program:
+<ol>
+	<li>Batch Insert: Instead of passing the data one by one, we collect them all together and send it to one statement. When a batch is compiled, it's one transaction and all the pre-processing only happens once. By using this technique(autocommit is always off), we successfully reduced our parsing time from 7.0s to 1.0s with batch 128.</li>
+	<li>Disable AutoCommit: When we run queries with autocommit = 1 (which is the default mode at MySQL). Every insert query begins a new transaction, which do some overhead. So we set the autocommit=0 to disable it execute in the separate transaction in every query. By using this technique(batch insert is always on), the running time is reduced from 6.6s to 0.9s.</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body{
+	overflow-x: hidden;
+	
+}
+
+div#header {
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+		
+}
+
+div#header_content {
+    position: absolute;
+    right: 20px;
+	z-index: 3;
+	top:10px;
+	right: 50px;
+	
+}
+
+div#headerbg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: black;
+	opacity: 0.7;
+	width: 100%;
+	height: 120px;
+	z-index: 1;
+}
+
+div#header h3{
+	font-family: raleway;
+	color: white;
+	
+}
+
+div#header img{
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    width: 78px;
+    height:100px;
+}
+
+
+div#header #login_button{
+	  color: white;
+      border-radius: 4px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      background: rgb(223, 117, 20);
+      border: 0px;
+	
+
+}
+
+
+
+//Body Backgrounds
+
+  .fadein {
+  position: fixed; 
+
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  z-index: -1;
+}
+
+.fadein img {
+  position: absolute; 
+  
+  
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+div#main_content  {
+position: absolute; 
+top: 175px; 
+left: 80px; 
+
+
+}
+
+div#main_content  h2{
+font-family:'Century Gothic'; 
+font-size: 36px; 
+z-index: 3; 
+color: white;		
+}
+
+h4 {
+  font-family: 'Raleway';
+  font-size: 8px;
+  color: red;	
+  top: -10px;	
+}
+
+

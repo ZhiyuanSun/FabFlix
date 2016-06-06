@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head> Where and How we use the LIKE predicate in our website: </head>
+<body>
+    <p><b>We Use It At:</b>
+<ul>- Advanced Search:<br>
+    User will be able to get the result by only providing some substring of their information. The system supports "partial matching" for the term user enter in.</ul>
+
+    <ul>- The attributes have been checked:
+        <li>movie title;</li>
+        <li>movie year;</li>
+        <li>genre names</li>
+        <li>star name (first, and last)</li>
+    </ul>
+
+<ul>The files are involved:
+    <li>SearchQuery.java </li>
+    <li>Query.java:</li>
+</ul>
+
+
+    <p><b>Why we use it:</b>
+<ul>For Substring matching:
+          by using the SQL operation LIKE with "%", we won't miss any possible results that includes the string in any pattern.
+          For example:
+    </ul>
+    <ul>
+        <li>'ABC%': All strings that start with 'ABC'. For example, 'ABCD' and 'ABCABC' would both satisfy the condition.
+            </li>
+        <li> %XYZ': All strings that end with 'XYZ'. For example, 'WXYZ' and 'ZZXYZ' would both satisfy the condition.
+            </li>
+        <li> %AN%': All strings that contain the pattern 'AN' anywhere. For example, 'LOS ANGELES' and 'SAN FRANCISCO' would both satisfy the condition.
+            </li> 
+        </ul>
+</body>
+</html>
